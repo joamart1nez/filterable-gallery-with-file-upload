@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@400;500;600;700&family=Vesper+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="galery.css">      
+    <title>Galeria</title>
+</head>
+<body>
+    <!-- <form action="">
+        <input type="file" name="file" id="file" accept="image/*" onchange="previeImage();">
+    </form>
+    <h1>Hola</h1>
+    <div id="preview">
+        <img src="inmobiliaria/house1.jpg" alt="">
+    </div> -->
+    <header>
+        <h1>Mi Galeria</h1>
+        <h2>Fotógrafo Profesional</h2>
+        <nav>
+            <ul>
+                <li class="list active" data-filter="all">Todas mis fotos</li>
+                <li class="list" data-filter="landscape">Paisajes</li>
+                <li class="list" data-filter="animals">Animales</li>
+                <li class="list" data-filter="urban">Urbano</li>
+                <li class="list" data-filter="buildings">Edificios</li>
+                <li class="list" data-filter="news">Nuevas</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product">
+        <div class="itemBox landscape"><img src="galery/galery1.jpg" alt=""></div>
+        <div class="itemBox buildings"><img src="galery/galery12.jpg" alt=""></div>
+        <div class="itemBox animals"><img src="galery/galery6.jpg" alt=""></div>
+        <div class="itemBox animals"><img src="galery/galery7.jpg" alt=""></div>
+        <div class="itemBox animals"><img src="galery/galery5.jpg" alt=""></div>
+        <div class="itemBox landscape"><img src="galery/galery3.jpg" alt=""></div>
+        <div class="itemBox buildings"><img src="galery/galery11.jpg" alt=""></div>
+        <div class="itemBox urban"><img src="galery/galery8.jpg" alt=""></div>
+        <div class="itemBox landscape"><img src="galery/galery2.jpg" alt=""></div>
+        <div class="itemBox urban"><img src="galery/galery9.jpg" alt=""></div>
+        <div class="itemBox buildings"><img src="galery/galery10.jpg" alt=""></div>
+        <div class="itemBox landscape"><img src="galery/galery4.jpg" alt=""></div>
+    </section>
+    <form action="">
+        <h2>Subir nueva fotografía</h2>
+        <input type="file" name="file" id="file" accept="image/*" onchange="previeImage();">
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+    // var preview = document.getElementById('preview');
+    // function previeImage() {
+    //     let file = document.querySelector('#file').files;
+    //     if (file.length > 0) {
+    //         var fileReader = new FileReader();
+    //         fileReader.onload = function (e) {
+    //             preview.appendChild(document.createElement('img')).setAttribute('src', `${e.target.result}`);
+    //         };
+    //         fileReader.readAsDataURL(file[0]);
+    //     }
+    // } 
+</script>
+<script src="galery.js"></script>
+</html>
